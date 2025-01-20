@@ -1,0 +1,76 @@
+
+int main()
+{
+00007FF6BE4E2380  push        rbp  
+00007FF6BE4E2382  push        rdi  
+00007FF6BE4E2383  sub         rsp,148h  
+00007FF6BE4E238A  lea         rbp,[rsp+20h]  
+00007FF6BE4E238F  lea         rdi,[rsp+20h]  
+00007FF6BE4E2394  mov         ecx,1Ah  
+00007FF6BE4E2399  mov         eax,0CCCCCCCCh  
+00007FF6BE4E239E  rep stos    dword ptr [rdi]  
+00007FF6BE4E23A0  mov         rax,qword ptr [__security_cookie (07FF6BE4ED000h)]  
+00007FF6BE4E23A7  xor         rax,rbp  
+00007FF6BE4E23AA  mov         qword ptr [rbp+118h],rax  
+00007FF6BE4E23B1  lea         rcx,[__B8B33B81_main@cpp (07FF6BE4F3068h)]  
+00007FF6BE4E23B8  call        __CheckForDebuggerJustMyCode (07FF6BE4E1401h)  
+00007FF6BE4E23BD  nop  
+	int num, i;
+	int product = 1;
+00007FF6BE4E23BE  mov         dword ptr [product],1  
+	cout << "Enter a number:\n" << endl;
+00007FF6BE4E23C5  lea         rdx,[string "Enter a number:\n" (07FF6BE4EACA8h)]  
+00007FF6BE4E23CC  mov         rcx,qword ptr [__imp_std::cout (07FF6BE4F1198h)]  
+00007FF6BE4E23D3  call        std::operator<<<std::char_traits<char> > (07FF6BE4E108Ch)  
+00007FF6BE4E23D8  lea         rdx,[std::endl<char,std::char_traits<char> > (07FF6BE4E103Ch)]  
+00007FF6BE4E23DF  mov         rcx,rax  
+00007FF6BE4E23E2  call        qword ptr [__imp_std::basic_ostream<char,std::char_traits<char> >::operator<< (07FF6BE4F1180h)]  
+00007FF6BE4E23E8  nop  
+	cin >> num;
+00007FF6BE4E23E9  lea         rdx,[num]  
+00007FF6BE4E23ED  mov         rcx,qword ptr [__imp_std::cin (07FF6BE4F1150h)]  
+00007FF6BE4E23F4  call        qword ptr [__imp_std::basic_istream<char,std::char_traits<char> >::operator>> (07FF6BE4F1160h)]  
+00007FF6BE4E23FA  nop  
+	for (i = num; i > 0; i--)
+00007FF6BE4E23FB  mov         eax,dword ptr [num]  
+00007FF6BE4E23FE  mov         dword ptr [i],eax  
+00007FF6BE4E2401  jmp         __$EncStackInitStart+7Ch (07FF6BE4E240Bh)  
+00007FF6BE4E2403  mov         eax,dword ptr [i]  
+00007FF6BE4E2406  dec         eax  
+00007FF6BE4E2408  mov         dword ptr [i],eax  
+00007FF6BE4E240B  cmp         dword ptr [i],0  
+00007FF6BE4E240F  jle         __$EncStackInitStart+8Eh (07FF6BE4E241Dh)  
+		product = product * i;
+00007FF6BE4E2411  mov         eax,dword ptr [product]  
+00007FF6BE4E2414  imul        eax,dword ptr [i]  
+00007FF6BE4E2418  mov         dword ptr [product],eax  
+00007FF6BE4E241B  jmp         __$EncStackInitStart+74h (07FF6BE4E2403h)  
+	cout << "The factorial for " << num << "is: \n" << product;
+00007FF6BE4E241D  lea         rdx,[string "The factorial for " (07FF6BE4EACC8h)]  
+00007FF6BE4E2424  mov         rcx,qword ptr [__imp_std::cout (07FF6BE4F1198h)]  
+00007FF6BE4E242B  call        std::operator<<<std::char_traits<char> > (07FF6BE4E108Ch)  
+00007FF6BE4E2430  mov         edx,dword ptr [num]  
+00007FF6BE4E2433  mov         rcx,rax  
+00007FF6BE4E2436  call        qword ptr [__imp_std::basic_ostream<char,std::char_traits<char> >::operator<< (07FF6BE4F1178h)]  
+00007FF6BE4E243C  lea         rdx,[string "is: \n" (07FF6BE4EACBCh)]  
+00007FF6BE4E2443  mov         rcx,rax  
+00007FF6BE4E2446  call        std::operator<<<std::char_traits<char> > (07FF6BE4E108Ch)  
+00007FF6BE4E244B  mov         edx,dword ptr [product]  
+00007FF6BE4E244E  mov         rcx,rax  
+00007FF6BE4E2451  call        qword ptr [__imp_std::basic_ostream<char,std::char_traits<char> >::operator<< (07FF6BE4F1178h)]  
+00007FF6BE4E2457  nop  
+	return 1;
+00007FF6BE4E2458  mov         eax,1  
+}
+00007FF6BE4E245D  mov         edi,eax  
+00007FF6BE4E245F  lea         rcx,[rbp-20h]  
+00007FF6BE4E2463  lea         rdx,[__xt_z+160h (07FF6BE4EAC00h)]  
+00007FF6BE4E246A  call        _RTC_CheckStackVars (07FF6BE4E1393h)  
+00007FF6BE4E246F  mov         eax,edi  
+00007FF6BE4E2471  mov         rcx,qword ptr [rbp+118h]  
+00007FF6BE4E2478  xor         rcx,rbp  
+00007FF6BE4E247B  call        __security_check_cookie (07FF6BE4E120Dh)  
+00007FF6BE4E2480  lea         rsp,[rbp+128h]  
+00007FF6BE4E2487  pop         rdi  
+00007FF6BE4E2488  pop         rbp  
+00007FF6BE4E2489  ret

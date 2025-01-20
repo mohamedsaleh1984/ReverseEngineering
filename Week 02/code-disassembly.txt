@@ -1,0 +1,85 @@
+cpp
+section .data
+    prompt db "Enter a number:", 0
+    result db "The factorial for ", 0
+    is db " is: ", 0
+    num db 0
+    product db 1
+
+section .bss
+    input resb 4
+
+section .text
+    global _start
+
+_start:
+    ; Print prompt
+    mov rax, 1          ; syscall: write
+    mov rdi, 1          ; file descriptor: stdout
+    mov rsi, prompt     ; pointer to message
+    mov rdx, 17         ; message length
+    syscall
+
+    ; Read number
+    mov rax, 0          ; syscall: read
+    mov rdi, 0          ; file descriptor: stdin
+    mov rsi, input      ; buffer to store input
+    mov rdx, 4          ; number of bytes to read
+    syscall
+
+    ; Convert input to integer
+    mov rax, [input]    ; load input
+    sub rax, '0'        ; convert ASCII to integer
+    mov [num], rax      ; store in num
+
+    ; Initialize variables
+    mov rax, [num]      ; load num
+    mov rbx, 1          ; product = 1
+
+factorial_loop:
+    cmp rax, 0          ; compare i with 0
+    jle print_result     ; if i <= 0, jump to print_result
+    mul rax             ; product *= i
+    dec rax             ; i--
+    jmp factorial_loop   ; repeat loop
+
+print_result:
+    ; Print result
+    mov rax, 1          ; syscall: write
+    mov rdi, 1          ; file descriptor: stdout
+    mov rsi, result     ; pointer to result message
+    mov rdx, 20         ; message length
+    syscall
+
+    ; Print num
+    mov rax, [num]
+    add rax, '0'        ; convert integer to ASCII
+    mov [input], al     ; store in input buffer
+    mov rax, 1          ; syscall: write
+    mov rdi, 1          ; file descriptor: stdout
+    mov rsi, input      ; pointer to number
+    mov rdx, 1          ; message length
+    syscall
+
+    ; Print " is: "
+    mov rax, 1          ; syscall: write
+    mov rdi, 1          ; file descriptor: stdout
+    mov rsi, is         ; pointer to " is: "
+    mov rdx, 5          ; message length
+    syscall
+
+    ; Print product
+    mov rax, rbx        ; load product
+    add rax, '0'        ; convert integer to ASCII
+    mov [input], al     ; store in input buffer
+    mov rax, 1          ; syscall: write
+    mov rdi, 1          ; file descriptor: stdout
+    mov rsi, input      ; pointer to product
+    mov rdx, 1          ; message length
+    syscall
+
+    ; Exit
+    mov rax, 60         ; syscall: exit
+    xor rdi, rdi        ; status: 0
+    syscall
+
