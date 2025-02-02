@@ -1,0 +1,131 @@
+
+assignment4_3.o:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <main>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	48 83 ec 20          	sub    $0x20,%rsp
+   8:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+   f:	00 00 
+  11:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+  15:	31 c0                	xor    %eax,%eax
+  17:	c7 45 f4 01 00 00 00 	movl   $0x1,-0xc(%rbp)
+  1e:	48 8d 35 00 00 00 00 	lea    0x0(%rip),%rsi        # 25 <main+0x25>
+  25:	48 8d 3d 00 00 00 00 	lea    0x0(%rip),%rdi        # 2c <main+0x2c>
+  2c:	e8 00 00 00 00       	callq  31 <main+0x31>
+  31:	48 89 c2             	mov    %rax,%rdx
+  34:	48 8b 05 00 00 00 00 	mov    0x0(%rip),%rax        # 3b <main+0x3b>
+  3b:	48 89 c6             	mov    %rax,%rsi
+  3e:	48 89 d7             	mov    %rdx,%rdi
+  41:	e8 00 00 00 00       	callq  46 <main+0x46>
+  46:	48 8d 45 e8          	lea    -0x18(%rbp),%rax
+  4a:	48 89 c6             	mov    %rax,%rsi
+  4d:	48 8d 3d 00 00 00 00 	lea    0x0(%rip),%rdi        # 54 <main+0x54>
+  54:	e8 00 00 00 00       	callq  59 <main+0x59>
+  59:	8b 45 e8             	mov    -0x18(%rbp),%eax
+  5c:	83 e8 01             	sub    $0x1,%eax
+  5f:	89 45 f4             	mov    %eax,-0xc(%rbp)
+  62:	c7 45 f0 01 00 00 00 	movl   $0x1,-0x10(%rbp)
+  69:	8b 45 e8             	mov    -0x18(%rbp),%eax
+  6c:	39 45 f0             	cmp    %eax,-0x10(%rbp)
+  6f:	7f 72                	jg     e3 <main+0xe3>
+  71:	c7 45 ec 01 00 00 00 	movl   $0x1,-0x14(%rbp)
+  78:	8b 45 ec             	mov    -0x14(%rbp),%eax
+  7b:	3b 45 f4             	cmp    -0xc(%rbp),%eax
+  7e:	7f 19                	jg     99 <main+0x99>
+  80:	48 8d 35 00 00 00 00 	lea    0x0(%rip),%rsi        # 87 <main+0x87>
+  87:	48 8d 3d 00 00 00 00 	lea    0x0(%rip),%rdi        # 8e <main+0x8e>
+  8e:	e8 00 00 00 00       	callq  93 <main+0x93>
+  93:	83 45 ec 01          	addl   $0x1,-0x14(%rbp)
+  97:	eb df                	jmp    78 <main+0x78>
+  99:	83 6d f4 01          	subl   $0x1,-0xc(%rbp)
+  9d:	c7 45 ec 01 00 00 00 	movl   $0x1,-0x14(%rbp)
+  a4:	8b 45 f0             	mov    -0x10(%rbp),%eax
+  a7:	01 c0                	add    %eax,%eax
+  a9:	83 e8 01             	sub    $0x1,%eax
+  ac:	39 45 ec             	cmp    %eax,-0x14(%rbp)
+  af:	7f 19                	jg     ca <main+0xca>
+  b1:	48 8d 35 00 00 00 00 	lea    0x0(%rip),%rsi        # b8 <main+0xb8>
+  b8:	48 8d 3d 00 00 00 00 	lea    0x0(%rip),%rdi        # bf <main+0xbf>
+  bf:	e8 00 00 00 00       	callq  c4 <main+0xc4>
+  c4:	83 45 ec 01          	addl   $0x1,-0x14(%rbp)
+  c8:	eb da                	jmp    a4 <main+0xa4>
+  ca:	48 8d 35 00 00 00 00 	lea    0x0(%rip),%rsi        # d1 <main+0xd1>
+  d1:	48 8d 3d 00 00 00 00 	lea    0x0(%rip),%rdi        # d8 <main+0xd8>
+  d8:	e8 00 00 00 00       	callq  dd <main+0xdd>
+  dd:	83 45 f0 01          	addl   $0x1,-0x10(%rbp)
+  e1:	eb 86                	jmp    69 <main+0x69>
+  e3:	c7 45 f4 01 00 00 00 	movl   $0x1,-0xc(%rbp)
+  ea:	c7 45 f0 01 00 00 00 	movl   $0x1,-0x10(%rbp)
+  f1:	8b 45 e8             	mov    -0x18(%rbp),%eax
+  f4:	83 e8 01             	sub    $0x1,%eax
+  f7:	39 45 f0             	cmp    %eax,-0x10(%rbp)
+  fa:	7f 75                	jg     171 <main+0x171>
+  fc:	c7 45 ec 01 00 00 00 	movl   $0x1,-0x14(%rbp)
+ 103:	8b 45 ec             	mov    -0x14(%rbp),%eax
+ 106:	3b 45 f4             	cmp    -0xc(%rbp),%eax
+ 109:	7f 19                	jg     124 <main+0x124>
+ 10b:	48 8d 35 00 00 00 00 	lea    0x0(%rip),%rsi        # 112 <main+0x112>
+ 112:	48 8d 3d 00 00 00 00 	lea    0x0(%rip),%rdi        # 119 <main+0x119>
+ 119:	e8 00 00 00 00       	callq  11e <main+0x11e>
+ 11e:	83 45 ec 01          	addl   $0x1,-0x14(%rbp)
+ 122:	eb df                	jmp    103 <main+0x103>
+ 124:	83 45 f4 01          	addl   $0x1,-0xc(%rbp)
+ 128:	c7 45 ec 01 00 00 00 	movl   $0x1,-0x14(%rbp)
+ 12f:	8b 45 e8             	mov    -0x18(%rbp),%eax
+ 132:	2b 45 f0             	sub    -0x10(%rbp),%eax
+ 135:	01 c0                	add    %eax,%eax
+ 137:	83 e8 01             	sub    $0x1,%eax
+ 13a:	39 45 ec             	cmp    %eax,-0x14(%rbp)
+ 13d:	7f 19                	jg     158 <main+0x158>
+ 13f:	48 8d 35 00 00 00 00 	lea    0x0(%rip),%rsi        # 146 <main+0x146>
+ 146:	48 8d 3d 00 00 00 00 	lea    0x0(%rip),%rdi        # 14d <main+0x14d>
+ 14d:	e8 00 00 00 00       	callq  152 <main+0x152>
+ 152:	83 45 ec 01          	addl   $0x1,-0x14(%rbp)
+ 156:	eb d7                	jmp    12f <main+0x12f>
+ 158:	48 8d 35 00 00 00 00 	lea    0x0(%rip),%rsi        # 15f <main+0x15f>
+ 15f:	48 8d 3d 00 00 00 00 	lea    0x0(%rip),%rdi        # 166 <main+0x166>
+ 166:	e8 00 00 00 00       	callq  16b <main+0x16b>
+ 16b:	83 45 f0 01          	addl   $0x1,-0x10(%rbp)
+ 16f:	eb 80                	jmp    f1 <main+0xf1>
+ 171:	b8 01 00 00 00       	mov    $0x1,%eax
+ 176:	48 8b 4d f8          	mov    -0x8(%rbp),%rcx
+ 17a:	64 48 33 0c 25 28 00 	xor    %fs:0x28,%rcx
+ 181:	00 00 
+ 183:	74 05                	je     18a <main+0x18a>
+ 185:	e8 00 00 00 00       	callq  18a <main+0x18a>
+ 18a:	c9                   	leaveq 
+ 18b:	c3                   	retq   
+
+000000000000018c <_Z41__static_initialization_and_destruction_0ii>:
+ 18c:	55                   	push   %rbp
+ 18d:	48 89 e5             	mov    %rsp,%rbp
+ 190:	48 83 ec 10          	sub    $0x10,%rsp
+ 194:	89 7d fc             	mov    %edi,-0x4(%rbp)
+ 197:	89 75 f8             	mov    %esi,-0x8(%rbp)
+ 19a:	83 7d fc 01          	cmpl   $0x1,-0x4(%rbp)
+ 19e:	75 32                	jne    1d2 <_Z41__static_initialization_and_destruction_0ii+0x46>
+ 1a0:	81 7d f8 ff ff 00 00 	cmpl   $0xffff,-0x8(%rbp)
+ 1a7:	75 29                	jne    1d2 <_Z41__static_initialization_and_destruction_0ii+0x46>
+ 1a9:	48 8d 3d 00 00 00 00 	lea    0x0(%rip),%rdi        # 1b0 <_Z41__static_initialization_and_destruction_0ii+0x24>
+ 1b0:	e8 00 00 00 00       	callq  1b5 <_Z41__static_initialization_and_destruction_0ii+0x29>
+ 1b5:	48 8d 15 00 00 00 00 	lea    0x0(%rip),%rdx        # 1bc <_Z41__static_initialization_and_destruction_0ii+0x30>
+ 1bc:	48 8d 35 00 00 00 00 	lea    0x0(%rip),%rsi        # 1c3 <_Z41__static_initialization_and_destruction_0ii+0x37>
+ 1c3:	48 8b 05 00 00 00 00 	mov    0x0(%rip),%rax        # 1ca <_Z41__static_initialization_and_destruction_0ii+0x3e>
+ 1ca:	48 89 c7             	mov    %rax,%rdi
+ 1cd:	e8 00 00 00 00       	callq  1d2 <_Z41__static_initialization_and_destruction_0ii+0x46>
+ 1d2:	90                   	nop
+ 1d3:	c9                   	leaveq 
+ 1d4:	c3                   	retq   
+
+00000000000001d5 <_GLOBAL__sub_I_main>:
+ 1d5:	55                   	push   %rbp
+ 1d6:	48 89 e5             	mov    %rsp,%rbp
+ 1d9:	be ff ff 00 00       	mov    $0xffff,%esi
+ 1de:	bf 01 00 00 00       	mov    $0x1,%edi
+ 1e3:	e8 a4 ff ff ff       	callq  18c <_Z41__static_initialization_and_destruction_0ii>
+ 1e8:	5d                   	pop    %rbp
+ 1e9:	c3                   	retq   
