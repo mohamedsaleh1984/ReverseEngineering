@@ -1,0 +1,81 @@
+
+assignment4_1.o:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <main>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	48 83 ec 10          	sub    $0x10,%rsp
+   8:	c7 45 f8 01 00 00 00 	movl   $0x1,-0x8(%rbp)
+   f:	83 7d f8 09          	cmpl   $0x9,-0x8(%rbp)
+  13:	0f 8f 8a 00 00 00    	jg     a3 <main+0xa3>
+  19:	c7 45 f4 01 00 00 00 	movl   $0x1,-0xc(%rbp)
+  20:	83 7d f4 09          	cmpl   $0x9,-0xc(%rbp)
+  24:	7f 74                	jg     9a <main+0x9a>
+  26:	8b 45 f8             	mov    -0x8(%rbp),%eax
+  29:	0f af 45 f4          	imul   -0xc(%rbp),%eax
+  2d:	89 45 fc             	mov    %eax,-0x4(%rbp)
+  30:	8b 45 f8             	mov    -0x8(%rbp),%eax
+  33:	89 c6                	mov    %eax,%esi
+  35:	48 8d 3d 00 00 00 00 	lea    0x0(%rip),%rdi        # 3c <main+0x3c>
+  3c:	e8 00 00 00 00       	callq  41 <main+0x41>
+  41:	48 8d 35 00 00 00 00 	lea    0x0(%rip),%rsi        # 48 <main+0x48>
+  48:	48 89 c7             	mov    %rax,%rdi
+  4b:	e8 00 00 00 00       	callq  50 <main+0x50>
+  50:	48 89 c2             	mov    %rax,%rdx
+  53:	8b 45 f4             	mov    -0xc(%rbp),%eax
+  56:	89 c6                	mov    %eax,%esi
+  58:	48 89 d7             	mov    %rdx,%rdi
+  5b:	e8 00 00 00 00       	callq  60 <main+0x60>
+  60:	48 8d 35 00 00 00 00 	lea    0x0(%rip),%rsi        # 67 <main+0x67>
+  67:	48 89 c7             	mov    %rax,%rdi
+  6a:	e8 00 00 00 00       	callq  6f <main+0x6f>
+  6f:	48 89 c2             	mov    %rax,%rdx
+  72:	8b 45 fc             	mov    -0x4(%rbp),%eax
+  75:	89 c6                	mov    %eax,%esi
+  77:	48 89 d7             	mov    %rdx,%rdi
+  7a:	e8 00 00 00 00       	callq  7f <main+0x7f>
+  7f:	48 89 c2             	mov    %rax,%rdx
+  82:	48 8b 05 00 00 00 00 	mov    0x0(%rip),%rax        # 89 <main+0x89>
+  89:	48 89 c6             	mov    %rax,%rsi
+  8c:	48 89 d7             	mov    %rdx,%rdi
+  8f:	e8 00 00 00 00       	callq  94 <main+0x94>
+  94:	83 45 f4 01          	addl   $0x1,-0xc(%rbp)
+  98:	eb 86                	jmp    20 <main+0x20>
+  9a:	83 45 f8 01          	addl   $0x1,-0x8(%rbp)
+  9e:	e9 6c ff ff ff       	jmpq   f <main+0xf>
+  a3:	b8 00 00 00 00       	mov    $0x0,%eax
+  a8:	c9                   	leaveq 
+  a9:	c3                   	retq   
+
+00000000000000aa <_Z41__static_initialization_and_destruction_0ii>:
+  aa:	55                   	push   %rbp
+  ab:	48 89 e5             	mov    %rsp,%rbp
+  ae:	48 83 ec 10          	sub    $0x10,%rsp
+  b2:	89 7d fc             	mov    %edi,-0x4(%rbp)
+  b5:	89 75 f8             	mov    %esi,-0x8(%rbp)
+  b8:	83 7d fc 01          	cmpl   $0x1,-0x4(%rbp)
+  bc:	75 32                	jne    f0 <_Z41__static_initialization_and_destruction_0ii+0x46>
+  be:	81 7d f8 ff ff 00 00 	cmpl   $0xffff,-0x8(%rbp)
+  c5:	75 29                	jne    f0 <_Z41__static_initialization_and_destruction_0ii+0x46>
+  c7:	48 8d 3d 00 00 00 00 	lea    0x0(%rip),%rdi        # ce <_Z41__static_initialization_and_destruction_0ii+0x24>
+  ce:	e8 00 00 00 00       	callq  d3 <_Z41__static_initialization_and_destruction_0ii+0x29>
+  d3:	48 8d 15 00 00 00 00 	lea    0x0(%rip),%rdx        # da <_Z41__static_initialization_and_destruction_0ii+0x30>
+  da:	48 8d 35 00 00 00 00 	lea    0x0(%rip),%rsi        # e1 <_Z41__static_initialization_and_destruction_0ii+0x37>
+  e1:	48 8b 05 00 00 00 00 	mov    0x0(%rip),%rax        # e8 <_Z41__static_initialization_and_destruction_0ii+0x3e>
+  e8:	48 89 c7             	mov    %rax,%rdi
+  eb:	e8 00 00 00 00       	callq  f0 <_Z41__static_initialization_and_destruction_0ii+0x46>
+  f0:	90                   	nop
+  f1:	c9                   	leaveq 
+  f2:	c3                   	retq   
+
+00000000000000f3 <_GLOBAL__sub_I_main>:
+  f3:	55                   	push   %rbp
+  f4:	48 89 e5             	mov    %rsp,%rbp
+  f7:	be ff ff 00 00       	mov    $0xffff,%esi
+  fc:	bf 01 00 00 00       	mov    $0x1,%edi
+ 101:	e8 a4 ff ff ff       	callq  aa <_Z41__static_initialization_and_destruction_0ii>
+ 106:	5d                   	pop    %rbp
+ 107:	c3                   	retq   
