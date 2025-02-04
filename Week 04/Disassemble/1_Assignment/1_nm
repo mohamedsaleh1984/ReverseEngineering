@@ -1,0 +1,15 @@
+                 U __cxa_atexit
+                 U __dso_handle
+                 U _GLOBAL_OFFSET_TABLE_
+00000000000000f3 t _GLOBAL__sub_I_main
+0000000000000000 T main
+00000000000000aa t _Z41__static_initialization_and_destruction_0ii
+                 U _ZNSolsEi
+                 U _ZNSolsEPFRSoS_E
+                 U _ZNSt8ios_base4InitC1Ev
+                 U _ZNSt8ios_base4InitD1Ev
+                 U _ZSt4cout
+                 U _ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+0000000000000000 r _ZStL19piecewise_construct
+0000000000000000 b _ZStL8__ioinit
+                 U _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
