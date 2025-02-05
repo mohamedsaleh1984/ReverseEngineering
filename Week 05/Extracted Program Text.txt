@@ -1,0 +1,40 @@
+0000 426f6220 4a6f6e65 73000000 00000000
+Bob Johnes
+
+0010 53617261 68204461 76697300 00000000
+Sarah Davis
+
+0020 416d7920 46726965 6e646c79 00000000
+Amy Friendly
+
+0030 4a6f686e 6e792053 6d697468 00000000
+Johnny Smith
+
+0040 4361726f 6c205370 65617273 00000000
+Carol Spears
+
+0070 31323300 00000000 00000000 00000000
+123
+
+
+
+Hello! Welcome to our Investment Company
+Invalid Password
+Please try again. 
+What would you like to do?
+DISPLAY the client list (enter 1)
+CHANGE a client's choice (enter 2)
+Exit the program (enter 3)
+You chose %d
+Enter your username:
+Enter your password:
+123
+Client's Name Service Selected (1 = Brokerage, 2 = Retirement)
+selected option %d
+1
+2
+3
+4
+5
+Enter the number of the client that you wish to change.
+Please enter the client's new service choice (1 = Brokerage, 2 = Retirement)
