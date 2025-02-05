@@ -1,0 +1,12 @@
+(gdb) info functions
+All defined functions:
+
+Non-debugging symbols:
+0x0000000000000000  main
+0x0000000000000120  CheckUserPermissionAccess()
+0x0000000000000241  DisplayInfo()
+0x000000000000042d  ChangeCustomerChoice()
+0x00000000000004fb  __static_initialization_and_destruction_0(int, int)
+0x0000000000000544  _GLOBAL__sub_I_username
+(gdb) 
+

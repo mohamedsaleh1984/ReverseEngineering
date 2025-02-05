@@ -1,0 +1,72 @@
+Dump of assembler code for function _Z25CheckUserPermissionAccessv:
+   0x0000000000000120 <+0>:	push   %rbp
+   0x0000000000000121 <+1>:	mov    %rsp,%rbp
+   0x0000000000000124 <+4>:	push   %rbx
+   0x0000000000000125 <+5>:	sub    $0x48,%rsp
+   0x0000000000000129 <+9>:	mov    %fs:0x28,%rax
+   0x0000000000000132 <+18>:	mov    %rax,-0x18(%rbp)
+   0x0000000000000136 <+22>:	xor    %eax,%eax
+   0x0000000000000138 <+24>:	lea    -0x45(%rbp),%rax
+   0x000000000000013c <+28>:	mov    %rax,%rdi
+   0x000000000000013f <+31>:	call   0x144 <_Z25CheckUserPermissionAccessv+36>
+   0x0000000000000144 <+36>:	lea    -0x45(%rbp),%rdx
+   0x0000000000000148 <+40>:	lea    -0x40(%rbp),%rax
+   0x000000000000014c <+44>:	lea    0x0(%rip),%rsi        # 0x153 <_Z25CheckUserPermissionAccessv+51>
+   0x0000000000000153 <+51>:	mov    %rax,%rdi
+   0x0000000000000156 <+54>:	call   0x15b <_Z25CheckUserPermissionAccessv+59>
+   0x000000000000015b <+59>:	lea    -0x45(%rbp),%rax
+   0x000000000000015f <+63>:	mov    %rax,%rdi
+   0x0000000000000162 <+66>:	call   0x167 <_Z25CheckUserPermissionAccessv+71>
+   0x0000000000000167 <+71>:	movl   $0x0,-0x44(%rbp)
+   0x000000000000016e <+78>:	lea    0x0(%rip),%rsi        # 0x175 <_Z25CheckUserPermissionAccessv+85>
+   0x0000000000000175 <+85>:	lea    0x0(%rip),%rdi        # 0x17c <_Z25CheckUserPermissionAccessv+92>
+   0x000000000000017c <+92>:	call   0x181 <_Z25CheckUserPermissionAccessv+97>
+   0x0000000000000181 <+97>:	lea    0x0(%rip),%rsi        # 0x188 <_Z25CheckUserPermissionAccessv+104>
+   0x0000000000000188 <+104>:	lea    0x0(%rip),%rdi        # 0x18f <_Z25CheckUserPermissionAccessv+111>
+   0x000000000000018f <+111>:	call   0x194 <_Z25CheckUserPermissionAccessv+116>
+   0x0000000000000194 <+116>:	lea    0x0(%rip),%rsi        # 0x19b <_Z25CheckUserPermissionAccessv+123>
+   0x000000000000019b <+123>:	lea    0x0(%rip),%rdi        # 0x1a2 <_Z25CheckUserPermissionAccessv+130>
+   0x00000000000001a2 <+130>:	call   0x1a7 <_Z25CheckUserPermissionAccessv+135>
+   0x00000000000001a7 <+135>:	lea    -0x40(%rbp),%rax
+   0x00000000000001ab <+139>:	mov    %rax,%rsi
+   0x00000000000001ae <+142>:	lea    0x0(%rip),%rdi        # 0x1b5 <_Z25CheckUserPermissionAccessv+149>
+   0x00000000000001b5 <+149>:	call   0x1ba <_Z25CheckUserPermissionAccessv+154>
+   0x00000000000001ba <+154>:	lea    -0x40(%rbp),%rax
+   0x00000000000001be <+158>:	lea    0x0(%rip),%rsi        # 0x1c5 <_Z25CheckUserPermissionAccessv+165>
+   0x00000000000001c5 <+165>:	mov    %rax,%rdi
+   0x00000000000001c8 <+168>:	call   0x1cd <_Z25CheckUserPermissionAccessv+173>
+   0x00000000000001cd <+173>:	mov    %eax,-0x44(%rbp)
+   0x00000000000001d0 <+176>:	cmpl   $0x0,-0x44(%rbp)
+   0x00000000000001d4 <+180>:	jne    0x1dd <_Z25CheckUserPermissionAccessv+189>
+   0x00000000000001d6 <+182>:	mov    $0x1,%ebx
+   0x00000000000001db <+187>:	jmp    0x1e2 <_Z25CheckUserPermissionAccessv+194>
+   0x00000000000001dd <+189>:	mov    $0x2,%ebx
+   0x00000000000001e2 <+194>:	lea    -0x40(%rbp),%rax
+   0x00000000000001e6 <+198>:	mov    %rax,%rdi
+   0x00000000000001e9 <+201>:	call   0x1ee <_Z25CheckUserPermissionAccessv+206>
+   0x00000000000001ee <+206>:	mov    %ebx,%eax
+   0x00000000000001f0 <+208>:	mov    -0x18(%rbp),%rcx
+   0x00000000000001f4 <+212>:	xor    %fs:0x28,%rcx
+   0x00000000000001fd <+221>:	je     0x23a <_Z25CheckUserPermissionAccessv+282>
+   0x00000000000001ff <+223>:	jmp    0x235 <_Z25CheckUserPermissionAccessv+277>
+   0x0000000000000201 <+225>:	mov    %rax,%rbx
+   0x0000000000000204 <+228>:	lea    -0x45(%rbp),%rax
+   0x0000000000000208 <+232>:	mov    %rax,%rdi
+   0x000000000000020b <+235>:	call   0x210 <_Z25CheckUserPermissionAccessv+240>
+   0x0000000000000210 <+240>:	mov    %rbx,%rax
+   0x0000000000000213 <+243>:	mov    %rax,%rdi
+   0x0000000000000216 <+246>:	call   0x21b <_Z25CheckUserPermissionAccessv+251>
+   0x000000000000021b <+251>:	mov    %rax,%rbx
+   0x000000000000021e <+254>:	lea    -0x40(%rbp),%rax
+   0x0000000000000222 <+258>:	mov    %rax,%rdi
+   0x0000000000000225 <+261>:	call   0x22a <_Z25CheckUserPermissionAccessv+266>
+   0x000000000000022a <+266>:	mov    %rbx,%rax
+   0x000000000000022d <+269>:	mov    %rax,%rdi
+   0x0000000000000230 <+272>:	call   0x235 <_Z25CheckUserPermissionAccessv+277>
+   0x0000000000000235 <+277>:	call   0x23a <_Z25CheckUserPermissionAccessv+282>
+   0x000000000000023a <+282>:	add    $0x48,%rsp
+   0x000000000000023e <+286>:	pop    %rbx
+   0x000000000000023f <+287>:	pop    %rbp
+   0x0000000000000240 <+288>:	ret
+End of assembler dump.
+
