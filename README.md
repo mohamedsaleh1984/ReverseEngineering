@@ -39,3 +39,8 @@ objdump -s <filename.o>
 ```
 objdump -s Project1.o > DataSegment.txt
 ```
+
+RegEx to remove mem address
+```
+#\s0x[0-9<> _A-Za-z+]+
+```
