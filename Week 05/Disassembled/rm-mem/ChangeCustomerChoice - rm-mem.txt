@@ -1,47 +1,47 @@
 Dump of assembler code for function _Z20ChangeCustomerChoicev:
 push   %rbp
 mov    %rsp,%rbp
-lea    0x0(%rip),%rsi        # 0x438 <_Z20ChangeCustomerChoicev+11>
-lea    0x0(%rip),%rdi        # 0x43f <_Z20ChangeCustomerChoicev+18>
+lea    0x0(%rip),%rsi
+lea    0x0(%rip),%rdi
 call   0x444 <_Z20ChangeCustomerChoicev+23>
-lea    0x0(%rip),%rsi        # 0x44b <_Z20ChangeCustomerChoicev+30>
-lea    0x0(%rip),%rdi        # 0x452 <_Z20ChangeCustomerChoicev+37>
+lea    0x0(%rip),%rsi
+lea    0x0(%rip),%rdi
 call   0x457 <_Z20ChangeCustomerChoicev+42>
-lea    0x0(%rip),%rsi        # 0x45e <_Z20ChangeCustomerChoicev+49>
-lea    0x0(%rip),%rdi        # 0x465 <_Z20ChangeCustomerChoicev+56>
+lea    0x0(%rip),%rsi
+lea    0x0(%rip),%rdi
 call   0x46a <_Z20ChangeCustomerChoicev+61>
-lea    0x0(%rip),%rsi        # 0x471 <_Z20ChangeCustomerChoicev+68>
-lea    0x0(%rip),%rdi        # 0x478 <_Z20ChangeCustomerChoicev+75>
+lea    0x0(%rip),%rsi
+lea    0x0(%rip),%rdi
 call   0x47d <_Z20ChangeCustomerChoicev+80>
-mov    0x0(%rip),%eax        # 0x483 <_Z20ChangeCustomerChoicev+86>
+mov    0x0(%rip),%eax
 cmp    $0x1,%eax
 jne    0x496 <_Z20ChangeCustomerChoicev+105>
-mov    0x0(%rip),%eax        # 0x48e <_Z20ChangeCustomerChoicev+97>
-mov    %eax,0x0(%rip)        # 0x494 <_Z20ChangeCustomerChoicev+103>
+mov    0x0(%rip),%eax
+mov    %eax,0x0(%rip)
 jmp    0x4f8 <_Z20ChangeCustomerChoicev+203>
-mov    0x0(%rip),%eax        # 0x49c <_Z20ChangeCustomerChoicev+111>
+mov    0x0(%rip),%eax
 cmp    $0x2,%eax
 jne    0x4af <_Z20ChangeCustomerChoicev+130>
-mov    0x0(%rip),%eax        # 0x4a7 <_Z20ChangeCustomerChoicev+122>
-mov    %eax,0x0(%rip)        # 0x4ad <_Z20ChangeCustomerChoicev+128>
+mov    0x0(%rip),%eax
+mov    %eax,0x0(%rip)
 jmp    0x4f8 <_Z20ChangeCustomerChoicev+203>
-mov    0x0(%rip),%eax        # 0x4b5 <_Z20ChangeCustomerChoicev+136>
+mov    0x0(%rip),%eax
 cmp    $0x3,%eax
 jne    0x4c8 <_Z20ChangeCustomerChoicev+155>
-mov    0x0(%rip),%eax        # 0x4c0 <_Z20ChangeCustomerChoicev+147>
-mov    %eax,0x0(%rip)        # 0x4c6 <_Z20ChangeCustomerChoicev+153>
+mov    0x0(%rip),%eax
+mov    %eax,0x0(%rip)
 jmp    0x4f8 <_Z20ChangeCustomerChoicev+203>
-mov    0x0(%rip),%eax        # 0x4ce <_Z20ChangeCustomerChoicev+161>
+mov    0x0(%rip),%eax
 cmp    $0x4,%eax
 jne    0x4e1 <_Z20ChangeCustomerChoicev+180>
-mov    0x0(%rip),%eax        # 0x4d9 <_Z20ChangeCustomerChoicev+172>
-mov    %eax,0x0(%rip)        # 0x4df <_Z20ChangeCustomerChoicev+178>
+mov    0x0(%rip),%eax
+mov    %eax,0x0(%rip)
 jmp    0x4f8 <_Z20ChangeCustomerChoicev+203>
-mov    0x0(%rip),%eax        # 0x4e7 <_Z20ChangeCustomerChoicev+186>
+mov    0x0(%rip),%eax
 cmp    $0x5,%eax
 jne    0x4f8 <_Z20ChangeCustomerChoicev+203>
-mov    0x0(%rip),%eax        # 0x4f2 <_Z20ChangeCustomerChoicev+197>
-mov    %eax,0x0(%rip)        # 0x4f8 <_Z20ChangeCustomerChoicev+203>
+mov    0x0(%rip),%eax
+mov    %eax,0x0(%rip)
 nop
 pop    %rbp
 ret

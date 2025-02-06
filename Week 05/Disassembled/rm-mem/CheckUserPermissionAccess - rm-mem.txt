@@ -11,28 +11,28 @@ mov    %rax,%rdi
 call   0x144 <_Z25CheckUserPermissionAccessv+36>
 lea    -0x45(%rbp),%rdx
 lea    -0x40(%rbp),%rax
-lea    0x0(%rip),%rsi        # 0x153 <_Z25CheckUserPermissionAccessv+51>
+lea    0x0(%rip),%rsi
 mov    %rax,%rdi
 call   0x15b <_Z25CheckUserPermissionAccessv+59>
 lea    -0x45(%rbp),%rax
 mov    %rax,%rdi
 call   0x167 <_Z25CheckUserPermissionAccessv+71>
 movl   $0x0,-0x44(%rbp)
-lea    0x0(%rip),%rsi        # 0x175 <_Z25CheckUserPermissionAccessv+85>
-lea    0x0(%rip),%rdi        # 0x17c <_Z25CheckUserPermissionAccessv+92>
+lea    0x0(%rip),%rsi
+lea    0x0(%rip),%rdi
 call   0x181 <_Z25CheckUserPermissionAccessv+97>
-lea    0x0(%rip),%rsi        # 0x188 <_Z25CheckUserPermissionAccessv+104>
-lea    0x0(%rip),%rdi        # 0x18f <_Z25CheckUserPermissionAccessv+111>
+lea    0x0(%rip),%rsi
+lea    0x0(%rip),%rdi
 call   0x194 <_Z25CheckUserPermissionAccessv+116>
-lea    0x0(%rip),%rsi        # 0x19b <_Z25CheckUserPermissionAccessv+123>
-lea    0x0(%rip),%rdi        # 0x1a2 <_Z25CheckUserPermissionAccessv+130>
+lea    0x0(%rip),%rsi
+lea    0x0(%rip),%rdi
 call   0x1a7 <_Z25CheckUserPermissionAccessv+135>
 lea    -0x40(%rbp),%rax
 mov    %rax,%rsi
-lea    0x0(%rip),%rdi        # 0x1b5 <_Z25CheckUserPermissionAccessv+149>
+lea    0x0(%rip),%rdi
 call   0x1ba <_Z25CheckUserPermissionAccessv+154>
 lea    -0x40(%rbp),%rax
-lea    0x0(%rip),%rsi        # 0x1c5 <_Z25CheckUserPermissionAccessv+165>
+lea    0x0(%rip),%rsi
 mov    %rax,%rdi
 call   0x1cd <_Z25CheckUserPermissionAccessv+173>
 mov    %eax,-0x44(%rbp)

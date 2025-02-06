@@ -1,59 +1,59 @@
 Dump of assembler code for function main:
 push   %rbp
 mov    %rsp,%rbp
-lea    0x0(%rip),%rsi        # 0xb <main+11>
-lea    0x0(%rip),%rdi        # 0x12 <main+18>
+lea    0x0(%rip),%rsi
+lea    0x0(%rip),%rdi
 call   0x17 <main+23>
 call   0x1c <main+28>
-mov    %eax,0x0(%rip)        # 0x22 <main+34>
-mov    0x0(%rip),%eax        # 0x28 <main+40>
+mov    %eax,0x0(%rip)
+mov    0x0(%rip),%eax
 cmp    $0x1,%eax
 je     0x40 <main+64>
-lea    0x0(%rip),%rsi        # 0x34 <main+52>
-lea    0x0(%rip),%rdi        # 0x3b <main+59>
+lea    0x0(%rip),%rsi
+lea    0x0(%rip),%rdi
 call   0x40 <main+64>
-mov    0x0(%rip),%eax        # 0x46 <main+70>
+mov    0x0(%rip),%eax
 cmp    $0x1,%eax
 je     0x4d <main+77>
 jmp    0x17 <main+23>
-lea    0x0(%rip),%rsi        # 0x54 <main+84>
-lea    0x0(%rip),%rdi        # 0x5b <main+91>
+lea    0x0(%rip),%rsi
+lea    0x0(%rip),%rdi
 call   0x60 <main+96>
-lea    0x0(%rip),%rsi        # 0x67 <main+103>
-lea    0x0(%rip),%rdi        # 0x6e <main+110>
+lea    0x0(%rip),%rsi
+lea    0x0(%rip),%rdi
 call   0x73 <main+115>
-lea    0x0(%rip),%rsi        # 0x7a <main+122>
-lea    0x0(%rip),%rdi        # 0x81 <main+129>
+lea    0x0(%rip),%rsi
+lea    0x0(%rip),%rdi
 call   0x86 <main+134>
-lea    0x0(%rip),%rsi        # 0x8d <main+141>
-lea    0x0(%rip),%rdi        # 0x94 <main+148>
+lea    0x0(%rip),%rsi
+lea    0x0(%rip),%rdi
 call   0x99 <main+153>
-lea    0x0(%rip),%rsi        # 0xa0 <main+160>
-lea    0x0(%rip),%rdi        # 0xa7 <main+167>
+lea    0x0(%rip),%rsi
+lea    0x0(%rip),%rdi
 call   0xac <main+172>
-lea    0x0(%rip),%rsi        # 0xb3 <main+179>
-lea    0x0(%rip),%rdi        # 0xba <main+186>
+lea    0x0(%rip),%rsi
+lea    0x0(%rip),%rdi
 call   0xbf <main+191>
 mov    %rax,%rdx
-mov    0x0(%rip),%eax        # 0xc8 <main+200>
+mov    0x0(%rip),%eax
 mov    %eax,%esi
 mov    %rdx,%rdi
 call   0xd2 <main+210>
 mov    %rax,%rdx
-mov    0x0(%rip),%rax        # 0xdc <main+220>
+mov    0x0(%rip),%rax
 mov    %rax,%rsi
 mov    %rdx,%rdi
 call   0xe7 <main+231>
-mov    0x0(%rip),%eax        # 0xed <main+237>
+mov    0x0(%rip),%eax
 cmp    $0x1,%eax
 jne    0xf9 <main+249>
 call   0xf7 <main+247>
 jmp    0x109 <main+265>
-mov    0x0(%rip),%eax        # 0xff <main+255>
+mov    0x0(%rip),%eax
 cmp    $0x2,%eax
 jne    0x109 <main+265>
 call   0x109 <main+265>
-mov    0x0(%rip),%eax        # 0x10f <main+271>
+mov    0x0(%rip),%eax
 cmp    $0x3,%eax
 je     0x119 <main+281>
 jmp    0x4d <main+77>
