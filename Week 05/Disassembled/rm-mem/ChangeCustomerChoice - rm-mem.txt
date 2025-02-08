@@ -13,6 +13,7 @@ call   0x46a <_Z20ChangeCustomerChoicev+61>
 lea    0x0(%rip),%rsi
 lea    0x0(%rip),%rdi
 call   0x47d <_Z20ChangeCustomerChoicev+80>
+
 mov    0x0(%rip),%eax
 cmp    $0x1,%eax
 jne    0x496 <_Z20ChangeCustomerChoicev+105>
@@ -28,6 +29,7 @@ jmp    0x4f8 <_Z20ChangeCustomerChoicev+203>
 mov    0x0(%rip),%eax
 cmp    $0x3,%eax
 jne    0x4c8 <_Z20ChangeCustomerChoicev+155>
+
 mov    0x0(%rip),%eax
 mov    %eax,0x0(%rip)
 jmp    0x4f8 <_Z20ChangeCustomerChoicev+203>
@@ -40,6 +42,7 @@ jmp    0x4f8 <_Z20ChangeCustomerChoicev+203>
 mov    0x0(%rip),%eax
 cmp    $0x5,%eax
 jne    0x4f8 <_Z20ChangeCustomerChoicev+203>
+
 mov    0x0(%rip),%eax
 mov    %eax,0x0(%rip)
 nop
