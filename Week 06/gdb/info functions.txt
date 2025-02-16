@@ -1,0 +1,5 @@
+Non-debugging symbols:
+0x0000000000000000  DisplayMenu()
+0x0000000000000079  main
+0x0000000000000323  __static_initialization_and_destruction_0(int, int)
+0x000000000000036c  _GLOBAL__sub_I__Z11DisplayMenuv

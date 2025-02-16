@@ -40,7 +40,12 @@ objdump -s <filename.o>
 objdump -s Project1.o > DataSegment.txt
 ```
 
-RegEx to remove mem address
+RegEx to remove mem address - memory references vtable
 ```
 #\s0x[0-9<> _A-Za-z+]+
+```
+
+RegEx tto remove mem address - memory address
+```
+0x[0-9<> _A-Za-z+]+\s<\+[0-9]+>:
 ```
