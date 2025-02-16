@@ -1,0 +1,68 @@
+.text:0000000000000097 loc_97:                                 ; CODE XREF: main+14B↓j
+.text:0000000000000097                                         ; main+1EA↓j ...
+.text:0000000000000097                 mov     eax, [rbp+var_14]
+.text:000000000000009A                 cmp     eax, 5
+.text:000000000000009D                 jz      loc_308
+.text:00000000000000A3                 lea     rsi, asc_3C8    ; "----------------\n"
+.text:00000000000000AA                 lea     rdi, _ZSt4cout  ; std::cout
+.text:00000000000000B1                 call    _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc ; PIC mode
+.text:00000000000000B6                 lea     rsi, a1Add_0    ; "- 1)Add -\n"
+.text:00000000000000BD                 lea     rdi, _ZSt4cout  ; std::cout
+.text:00000000000000C4                 call    _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc ; PIC mode
+.text:00000000000000C9                 lea     rsi, a2Subtract_0 ; "- 2)Subtract -\n"
+.text:00000000000000D0                 lea     rdi, _ZSt4cout  ; std::cout
+.text:00000000000000D7                 call    _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc ; PIC mode
+.text:00000000000000DC                 lea     rsi, a3Multiply_0 ; "- 3)Multiply -\n"
+.text:00000000000000E3                 lea     rdi, _ZSt4cout  ; std::cout
+.text:00000000000000EA                 call    _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc ; PIC mode
+.text:00000000000000EF                 lea     rsi, a4Exit_0   ; "- 4)Exit -\n"
+.text:00000000000000F6                 lea     rdi, _ZSt4cout  ; std::cout
+.text:00000000000000FD                 call    _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc ; PIC mode
+.text:0000000000000102                 lea     rsi, asc_3C8    ; "----------------\n"
+.text:0000000000000109                 lea     rdi, _ZSt4cout  ; std::cout
+.text:0000000000000110                 call    _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc ; PIC mode
+.text:0000000000000115                 lea     rax, [rbp+var_14]
+.text:0000000000000119                 mov     rsi, rax
+.text:000000000000011C                 lea     rdi, _ZSt3cin   ; std::cin
+.text:0000000000000123                 call    _ZNSirsERi      ; PIC mode
+.text:0000000000000128                 mov     eax, [rbp+var_14]
+.text:000000000000012B                 cmp     eax, 1
+.text:000000000000012E                 jnz     loc_1C9
+.text:0000000000000134                 lea     rax, [rbp+var_10]
+.text:0000000000000138                 mov     rsi, rax
+.text:000000000000013B                 lea     rdi, _ZSt3cin   ; std::cin
+.text:0000000000000142                 call    _ZNSirsERi      ; PIC mode
+.text:0000000000000147                 mov     rdx, rax
+.text:000000000000014A                 lea     rax, [rbp+var_C]
+.text:000000000000014E                 mov     rsi, rax
+.text:0000000000000151                 mov     rdi, rdx
+.text:0000000000000154                 call    _ZNSirsERi      ; PIC mode
+.text:0000000000000159                 mov     eax, [rbp+var_10]
+.text:000000000000015C                 mov     esi, eax
+.text:000000000000015E                 lea     rdi, _ZSt4cout  ; std::cout
+.text:0000000000000165                 call    _ZNSolsEi       ; PIC mode
+.text:000000000000016A                 lea     rsi, asc_411    ; " - "
+.text:0000000000000171                 mov     rdi, rax
+.text:0000000000000174                 call    _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc ; PIC mode
+.text:0000000000000179                 mov     rdx, rax
+.text:000000000000017C                 mov     eax, [rbp+var_C]
+.text:000000000000017F                 mov     esi, eax
+.text:0000000000000181                 mov     rdi, rdx
+.text:0000000000000184                 call    _ZNSolsEi       ; PIC mode
+.text:0000000000000189                 lea     rsi, asc_415    ; " = "
+.text:0000000000000190                 mov     rdi, rax
+.text:0000000000000193                 call    _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc ; PIC mode
+.text:0000000000000198                 mov     rcx, rax
+.text:000000000000019B                 mov     edx, [rbp+var_10]
+.text:000000000000019E                 mov     eax, [rbp+var_C]
+.text:00000000000001A1                 sub     edx, eax
+.text:00000000000001A3                 mov     eax, edx
+.text:00000000000001A5                 mov     esi, eax
+.text:00000000000001A7                 mov     rdi, rcx
+.text:00000000000001AA                 call    _ZNSolsEi       ; PIC mode
+.text:00000000000001AF                 mov     rdx, rax
+.text:00000000000001B2                 mov     rax, offset _ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ ; std::endl<char,std::char_traits<char>>(std::ostream &)
+.text:00000000000001B9                 mov     rsi, rax
+.text:00000000000001BC                 mov     rdi, rdx
+.text:00000000000001BF                 call    _ZNSolsEPFRSoS_E ; PIC mode
+.text:00000000000001C4                 jmp     loc_97
