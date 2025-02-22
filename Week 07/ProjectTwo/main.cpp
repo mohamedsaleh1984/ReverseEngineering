@@ -10,6 +10,7 @@
 using namespace std;
 
 const int CLIENT_NUM = 5;
+// Refactor 
 short service[5] = { 1, 2, 1, 1, 2 };
 const string clientsName[CLIENT_NUM] = {
  "Bob Jones", "Sarah Davis","Amy Friendly","Johnny Smith", "Carol Spears"
@@ -21,6 +22,8 @@ const string aInvalidPasswor = "Invalid Password or Username. Please try again";
 const string aEnterYourUsern = "Enter your username: ";
 const string aEnterYourPassw = "Enter your password: ";
 const string password = "123";
+
+// User name to Prevent un-authorized users to acces the system
 const string username = "M.S";
 
 const string aWhatWouldYouLi = "What would you like to do?";
@@ -35,21 +38,24 @@ const string aEnterTheNumber = "Enter the number of the client that you wish to 
 const string aPleaseEnterThe = "Please enter the client's new service choice (1 = Brokerage. 2 = Retirement)";
 
 /**
-* Validate User Input, Prevent Overflow
+* Validate User Input, Prevent Buffer Overflow
 */
-template<class T>
-T static ValidateUserInput(string statement, T min, T max) {
+
+int static ValidateUserInput(string statement, int min, int max) {
 	bool needInput = true;						//flag to check if we still need a valid number or not
 	string userInput;							//fetch user input
-	T returnValue;								//converted value from string to int.
+	int returnValue;							//converted value from string to int.
 
 	do {
 		try {
 			//printout the statement
-			cout << statement << endl;
+			if (statement.length() > 0) {
+				cout << statement << endl;
+			}
 
 			//fetch input from user
 			std::getline(std::cin, userInput);
+
 
 			returnValue = stoi(userInput);
 
@@ -80,9 +86,11 @@ T static ValidateUserInput(string statement, T min, T max) {
  * Check user permission
  * */
 int CheckUserPermission(void)
-{
+{	
+	// Fix
 	string username_input, pass;
 
+	// Added Username Check to prevent unlawfull access to the system.
 	cout << aEnterYourUsern << endl;
 	std::getline(std::cin, username_input);
 	
@@ -100,6 +108,7 @@ int CheckUserPermission(void)
  * */
 void DisplayInfo(void)
 {
+	// Refactored to avoid repetitive code.
 	cout << aClientSNameSer << endl;
 	for (int i = 0; i < CLIENT_NUM; i++) {
 		cout << num[i] << clientsName[i] << aSelected << service[i] << endl;
@@ -111,8 +120,10 @@ void DisplayInfo(void)
  * */
 void ChangeCustomerChoice(void)
 {
-	short client = 0, newChoice = 0;
+	int client = 0, newChoice = 0;
 
+	// Use secure function to fetch range of values from user.
+	// to prevent Buffer Overflow.
 	client = ValidateUserInput(aEnterTheNumber, 1, 5);
 	newChoice = ValidateUserInput(aPleaseEnterThe, 1, 2);
 
@@ -142,6 +153,7 @@ int main()
 		cout << aChangeAClientS << endl;
 		cout << aExitTheProgram << endl;
 
+		//  Prevent Buffer Overflow.
 		choice = ValidateUserInput("", 1, 3);
 		
 		cout << aYouChose << choice << endl;
